@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey-Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header id="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+            A survey is a form with questions specifically designed to gather information about people's experiences, preferences, wants, and needs. Surveys can be long, so a poll is a survey with just one question—a simple survey.
+        </p>
+    </header>
+    <section>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label"> Name : </label><input type="text" name="name" id="name" required placeholder="Enter your name"><br><br>
+
+            <label for="email" id="email-label"> Email : </label><input type="email" name="email" id="email" required placeholder="Enter your email"><br><br>
+
+            <label for="number" id="number-label"> Age : </label><input type="number" name="Age" id="number" min="10" max="99" placeholder="Age"><br><br>
+
+            <select name="dropdown" id="dropdown">
+                <option value="volvo">Volvo</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes</option>
+
+            </select><br><br>
+
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label> 
+
+            <p>what would you like to buy</p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>
+            <p>Do you have any comments,quetions, or concerns?</p>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder=""></textarea><br>
+            
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+
+        </form>
+    </section>
 </body>
 </html>
