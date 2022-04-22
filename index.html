@@ -18,63 +18,91 @@
         <div id="child-container">
             
     
-            <section>
+            
                 <form action="" id="survey-form">
-    
-                    <label for="name" id="name-label"> Name : </label><input type="text" name="name" id="name" required placeholder="Enter your name"><br><br>
-        
-                    <label for="email" id="email-label"> Email : </label><input type="email" name="email" id="email" required placeholder="Enter your email"><br><br>
-        
-                    <label for="number" id="number-label"> Age : </label><input type="number" name="Age" id="number" min="10" max="99" placeholder="Age"><br><br>
-        
-                    <label for="Favorite Food" id="Favorite Food">Favorite Food :</label>
-                    <select name="dropdown" id="dropdown">
-                        <option value="Cake">Cake</option>
-                        <option value="Pizza">Pizza</option>
-                        <option value="Kottu">Kottu</option>
-        
-                    </select><br><br>
-                    <p>what do you like to drive?</p>
-                    <input type="radio" id="html" name="fav_language" value="HTML">
-                    <label for="html">Car</label><br>
-        
-                    <input type="radio" id="css" name="fav_language" value="CSS">
-                    <label for="css">Van</label><br>
-        
-                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                    <label for="javascript">Bike</label> 
-        
-                    <p>What do you like to play?</p>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="sport1">Football</label><br>
-    
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="sport2">Baseball/Softball</label><br>
-    
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="sport3">Badminton</label><br>
-    
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="sport3">Basketball</label><br>
-    
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="sport3">Taekwondo</label><br>
-    
+
+                    <div class="lables">
+                        <label for="name" id="name-label"> Name : </label>
+                    </div>
+                    <div class="input-tab">
+                        <input class="input-field" type="text" name="name" id="name" required placeholder="Enter your name">
+                    </div>
                     
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="sport3">Cricket</label><br>
+                    <div class="lables">
+                        <label for="email" id="email-label"> Email : </label>
+                    </div>
+                    <div class="input-tab">
+                        <input class="input-field" type="email" name="email" id="email" required placeholder="Enter your email">
+                    </div>
                     
-    
-    
-    
-    
-                    <p>Do you have any comments,quetions, or concerns?</p>
-                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter comments here..."></textarea><br>
+                    <div class="lables">
+                        <label for="number" id="number-label"> Age : </label>
+                    </div>
+                    <div class="input-tab">
+                        <input class="input-field" type="number" name="Age" id="number" min="10" max="99" placeholder="Age">
+                    </div>
+                    <div class="lables">
+                        <label for="dropdown" id="Favorite Food">Favorite Food : </label>
+                    </div>
+                    <div class="input-tab">
+                        <select name="dropdown" id="dropdown">
+                            <option value="Cake">Cake</option>
+                            <option value="Pizza">Pizza</option>
+                            <option value="Kottu">Kottu</option>
+            
+                        </select>
+                    </div>
+
+                    <div class="lables">
+                        <label> what do you like to drive?</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="radio" name="radio-button" value="car">
+                        <label for="car">Car</label><br>
+
+                        <input type="radio"  name="radio-button" value="van">
+                        <label for="van">Van</label><br>
+        
+                        <input type="radio" name="radio-button" value="bike">
+                        <label for="bike">Bike</label>
+                    </div>
+
+                    <div class="lables">
+                        <label>What do you like to play?</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="sport1">Football</label><br>
+        
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="sport2">Baseball/Softball</label><br>
+        
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="sport3">Badminton</label><br>
+        
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="sport3">Basketball</label><br>
+        
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="sport3">Taekwondo</label><br>
+        
+                        
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="sport3">Cricket</label><br>
+                    </div>
+
+                    <div class="lables">
+                        <p>Do you have any comments,quetions, or concerns?</p>
+                    </div>
+                    <div class="input-tab">
+                        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter comments here..."></textarea><br>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
                     
-                    <button type="submit" id="submit" class="submit-button">Submit</button>
         
                 </form>
-            </section>
         </div>
         
     </div>
